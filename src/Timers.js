@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function FuncTimer() {
     const [date, setDate] = useState(new Date());
@@ -7,6 +7,10 @@ function FuncTimer() {
         const timerId = setInterval(() => {
             setDate(new Date());
         }, 1000);
+            
+        return () => {
+            clearInterval(timerId);
+        };
     }, [])
 
     return (
