@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Timers from './Timers'
+import Timers from './components/FuncTimers';
 
 class App extends Component {
   render() {
