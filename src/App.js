@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Timers from './components/FuncTimers';
+import FuncTimer from './components/FuncTimer';
+import ClassTimer from './components/ClassTimer';
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <main>
-        {/* <Timers /> */}
+        <FuncTimer />
+        <ClassTimer change={() => {}}/>
       </main>
     </div>
   );
